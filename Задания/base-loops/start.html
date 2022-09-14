@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<script>
+    for (let i = 2; i <= 20 ; i+=2) {
+        console.log(i);
+    }
+</script>-->
+
+<!--<script>
+    let i = 0;
+    while (i+=2 <= 20) {
+        console.log(i);
+    }
+</script>-->
+
+<!--<script>
+    while (true){
+        let input = prompt("Введите число(>100 для выхода или отмена)","");
+        console.log(input)
+        if (input > 100 || input == undefined){
+            break;
+        }
+    }N
+</script>-->
+
+<script>
+    let n = prompt("Input n",10)
+    for (let i = 2; i <= n ; i++) {
+        let isSimple = true;
+        for (let j = 2; j <= i / 2; j++) {
+            if (i % j === 0){
+                isSimple = false;
+                break;
+            }
+        }
+        if (isSimple){
+            console.log(i);
+        }
+    }
+</script>
+</body>
+</html>

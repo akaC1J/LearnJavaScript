@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let menu = {
+        width: 200,
+        height: 300,
+        title: "My menu"
+    };
+    let f =  function (menu) {
+        for (let key in menu) {
+            if (typeof menu[key] === 'number') {
+                menu[key] *= 2;
+            }
+
+        }
+    };
+    f(menu);
+    alert(String(menu))
+
+</script>
+</body>
+</html>
